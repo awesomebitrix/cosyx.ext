@@ -11,10 +11,12 @@
  *
  *	@package ui
  */
-class JQuery_Widget extends CSX_Widget {
+class JQuery_Widget extends CSX_SingletonWidget {
 	protected function init() {
 		parent::init();
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.js');
+		if (!$this->isInited()) {
+			$this->application->AddHeadScript($this->getPubUrl() . '/jquery-1.8.3.min.js');
+		}
 	}
 }
