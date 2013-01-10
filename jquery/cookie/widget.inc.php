@@ -8,13 +8,15 @@
  */
 
 /**
- *	JQuery widget
  *	@package cosyx.ext
  */
-class JQuery_Widget extends CSX_SingletonWidget {
+class JQuery_Cookie_Widget extends CSX_SingletonWidget {
 	protected function init() {
 		parent::init();
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery-1.8.3.min.js');
+		CSX_Widget::includeWidget('JQuery');
+
+		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.cookie.js');
 	}
 }
+?>
