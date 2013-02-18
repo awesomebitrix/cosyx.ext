@@ -7,7 +7,14 @@ class JQuery_Validation_Widget extends CSX_SingletonWidget {
 
 		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.validate.js');
 		$this->application->AddHeadScript($this->getPubUrl() . '/additional-methods.js');
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.validate.wrap.js');
+	
+		if (!defined('LANG_CHARSET') || LANG_CHARSET!='windows-1251') {
+			$this->application->AddHeadScript($this->getPubUrl() . '/jquery.validate.wrap.js');
+		}
+		else {
+			$this->application->AddHeadScript($this->getPubUrl() . '/jquery.validate.wrap1251.js');
+		}
+
 		$this->application->AddHeadStylesheet($this->getPubUrl() . '/style.css');
 	}
 }
