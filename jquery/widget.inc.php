@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Cosyx Bitrix Extender Project
  *
