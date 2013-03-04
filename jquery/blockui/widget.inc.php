@@ -5,6 +5,6 @@ class JQuery_BlockUI_Widget extends CSX_SingletonWidget {
 
 		CSX_Widget::includeWidget('JQuery');
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/js/jquery.blockui.js');
+		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.blockui.js');
 	}
 }
