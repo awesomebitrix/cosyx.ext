@@ -1,0 +1,1 @@
+Boxy.DEFAULTS.closeText = '[закрыть]';
