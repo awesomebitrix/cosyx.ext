@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Cosyx Bitrix Extender Project
  *
@@ -15,6 +16,11 @@ class JQuery_Widget extends CSX_SingletonWidget {
 	protected function init() {
 		parent::init();
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery-1.8.3.min.js');
+		if ($this->params->has('v')) {
+			$this->application->AddHeadScript('http://code.jquery.com/jquery-' . $this->params->get('v') . '.min.js');
+		}
+		else {
+			$this->application->AddHeadScript($this->getPubUrl() . '/jquery-1.8.3.min.js');
+		}
 	}
 }

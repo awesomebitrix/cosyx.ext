@@ -1,5 +1,5 @@
 <?php
-class JQuery_Boxy_Ex_Widget extends CSX_UI_SingletonWidget {
+class JQuery_Boxy_Ex_Widget extends CSX_SingletonWidget {
 	protected function init() {
 		parent::init();
 		
