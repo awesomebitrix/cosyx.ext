@@ -4,7 +4,7 @@
  * http://bassistance.de/jquery-plugins/jquery-plugin-validation/
  * http://docs.jquery.com/Plugins/Validation
  *
- * Copyright (c) 2006 - 2011 Jn Zaefferer
+ * Copyright (c) 2006 - 2011 JГ¶rn Zaefferer
  *
  * Licensed under MIT: http://www.opensource.org/licenses/mit-license.php
  */

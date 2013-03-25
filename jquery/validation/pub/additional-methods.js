@@ -4,7 +4,7 @@
  * http://bassistance.de/jquery-plugins/jquery-plugin-validation/
  * http://docs.jquery.com/Plugins/Validation
  *
- * Copyright (c) 2006 - 2011 Jrn Zaefferer
+ * Copyright (c) 2006 - 2011 J√∂rn Zaefferer
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -193,7 +193,7 @@ jQuery.validator.addMethod(
 
 		return this.optional(element) || check;
 	},
-	"¬‚Â‰ËÚÂ ‰‡ÚÛ ÙÓÏ‡Ú‡ ‰‰.ÏÏ.„„„„"
+	"–í–≤–µ–¥–∏—Ç–µ –¥–∞—Ç—É —Ñ–æ—Ä–º–∞—Ç–∞ –¥–¥.–º–º.–≥–≥–≥–≥"
 	);
 
 jQuery.validator.addMethod("dateNL", function(value, element) {
