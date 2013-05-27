@@ -441,7 +441,9 @@
 						})
 													.mouseleave(function(){
 								if (settings.pauseOnMouseOver && pauseSlider){	
-										activeButtons = activeButtons.add( $pause_btn.show()).not( $play_btn.hide());
+										if ($pause_btn && $play_btn) {
+											activeButtons = activeButtons.add( $pause_btn.show()).not( $play_btn.hide());
+										}
 										pauseSlider = false;
 										oSlider.startSlider();
 								}
