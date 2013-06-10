@@ -1,5 +1,5 @@
 <?php
-class JQuery_ScrollTo_Widget extends CSX_SingletonWidget {
+class JQuery_ScrollPane_Widget extends CSX_SingletonWidget {
 	protected function init() {
 		parent::init();
 
