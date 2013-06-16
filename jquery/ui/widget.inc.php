@@ -5,7 +5,7 @@ class JQuery_UI_Widget extends CSX_SingletonWidget {
 
 		CSX_Widget::includeWidget('JQuery');
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/js/jquery-ui-1.8.11.custom.min.js');
+		$this->application->AddHeadScript($this->getPubUrl() . '/js/jquery-ui-1.10.3.custom.min.js');
 
 		if (!defined('LANG_CHARSET') || LANG_CHARSET!='windows-1251') {
 			$this->application->AddHeadScript($this->getPubUrl() . '/js/i18n/jquery.ui.datepicker-ru.js');
