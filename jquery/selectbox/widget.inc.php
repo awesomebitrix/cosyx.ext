@@ -5,7 +5,7 @@ class JQuery_Selectbox_Widget extends CSX_SingletonWidget {
 
 		CSX_Widget::includeWidget('JQuery');
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.selectBox.min.js');
-		$this->application->AddHeadStylesheet($this->getPubUrl() . '/jquery.selectBox.css');
+		$this->application->AddHeadScript($this->getPubUrl() . '/js/jquery.selectbox-0.2.min.js');
+		$this->application->AddHeadStylesheet($this->getPubUrl() . '/css/jquery.selectbox.css');
 	}
 }
