@@ -19,5 +19,11 @@ class JQuery_JQPlot_Widget extends CSX_SingletonWidget {
         $this->application->AddHeadScript($this->getPubUrl() . '/excanvas.min.js');
         $this->application->AddHeadScript($this->getPubUrl() . '/jquery.jqplot.min.js');
         $this->application->AddHeadStylesheet($this->getPubUrl() . '/jquery.jqplot.min.css');
+
+        if ($this->params->has('plugins')) {
+            foreach ($this->params->get('plugins') as $plugin) {
+                $this->application->AddHeadScript($this->getPubUrl() . '/plugins/jqplot.' . $plugin . '.js');
+            }
+        }
     }
 }
