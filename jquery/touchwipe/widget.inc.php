@@ -16,6 +16,6 @@ class JQuery_TouchWipe_Widget extends CSX_SingletonWidget {
 
         CSX_Widget::includeWidget('JQuery');
 
-        $this->application->AddHeadScript($this->getPubUrl() . '/lib/jquery.touchwipe.min.js');
+        $this->application->AddHeadScript($this->getPubUrl() . '/jquery.touchwipe.min.js');
     }
 }
