@@ -16,6 +16,6 @@ class JQuery_ScrollTo_Widget extends CSX_SingletonWidget {
 
 		CSX_Widget::includeWidget('JQuery');
 
-		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.scrollTo-1.4.2-min.js');
+		$this->application->AddHeadScript($this->getPubUrl() . '/jquery.scrollTo.min.js');
 	}
 }
