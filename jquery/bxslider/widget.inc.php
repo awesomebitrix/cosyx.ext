@@ -17,6 +17,6 @@ class JQuery_BxSlider_Widget extends CSX_SingletonWidget {
 
         CSX_Widget::includeWidget('JQuery');
 
-        $this->application->AddHeadScript($this->getPubUrl() . '/js/jquery.bxslider.min.js');
+        $this->application->AddHeadScript($this->getPubUrl() . '/jquery.bxslider.min.js');
     }
 }
